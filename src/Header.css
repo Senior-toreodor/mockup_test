@@ -45,7 +45,7 @@
     animation-fill-mode: forwards;
     border-radius: 1rem;
     padding: 1vh;
-    width: 20vh;
+    width: 10rem;
     margin-top: 0.3rem;
     background: white;
     color: black;
@@ -85,7 +85,7 @@
     font-family: Urbanist;
     cursor: pointer;
     justify-content: flex-start;
-    margin: 0.5vh;
+    margin: 0.7vh;
 }
 .contactsPanel {
     margin-left:auto;
