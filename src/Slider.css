@@ -1,0 +1,34 @@
+.ticker-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; 
+}
+
+/* The ticker itself */
+.ticker {
+    display: inline-block;
+    animation: ticker 35s linear infinite; /* Adjust the duration as needed */
+}
+
+/* Each item in the ticker */
+.ticker-item {
+    display: inline-block;
+    margin-right: 3rem; 
+}
+
+.ticker-item img {
+    height: 3rem; 
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Animation keyframes */
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+} 

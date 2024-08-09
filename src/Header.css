@@ -1,0 +1,117 @@
+.siteHeader {
+    display: flex;
+    padding-top: 3rem;
+    justify-content: center;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+.logoDiv {
+    display: flex;
+    padding-right: 1rem;
+} 
+.logoDiv span{
+    font-family: Archivo Black !important;
+    font-size:1.3rem;
+}
+.logo {  
+    height:2.5rem;
+} 
+.navigationContent ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+} 
+.navigationContent ul li { 
+    width:10rem;
+} 
+.navigationContent a {
+    display: flex;
+    justify-content: center; 
+} 
+.navigationContent a span {
+    font-family: Urbanist;
+    font-size: 1.2rem;
+} 
+.navigationContent .arrow {
+    padding-left: 0.8rem;
+    width: 1rem;
+} 
+.navigationContent li:hover .arrow {
+    transition: transform 0.7s;
+    transform: rotate(90deg); 
+}
+.hiddenAboutPanel {
+    animation: 0.5s fadeOut;
+    animation-fill-mode: forwards;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 15rem;
+    margin-top: 1rem;
+    background: white;
+    color: black;
+    visibility: hidden;
+}
+.navigationContent li:hover .hiddenAboutPanel {
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+.panelContent a:hover  {
+    color: #FDB137;
+} 
+.imgDescription{
+    width:1rem;
+}
+.panelContent a {
+    font-family: Urbanist;
+    cursor: pointer;
+    justify-content: flex-start;
+    margin: 5px;
+}
+.contactsPanel {
+    margin-left:auto;
+}
+.contactsPanel .contactsPanelContent{
+    align-content:center;
+    display:flex;
+}
+.contactsPanel .imageButton{
+    border: none;
+    background:none; 
+    padding-left: 2rem;
+}
+.contactsPanel button{
+    border: none;
+    border-radius: 0.5rem;
+    background: #FDB137;
+    cursor: pointer;
+    padding:0.5rem;
+    margin-right: 0.5rem;
+}
+.contactsPanel button:hover{
+    filter: brightness(1.2);
+}
+.contactsPanel .imageButton:hover{
+    fill:#FDB137;
+}

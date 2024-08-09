@@ -1,0 +1,13 @@
+.siteFooter {
+    display: grid; 
+    position: absolute;
+    width:100%;
+    justify-content: center; 
+    bottom: 0;
+}
+.workWithLogos{
+    display:flex;
+}
+.footerText{
+    margin-bottom:2rem;
+}
