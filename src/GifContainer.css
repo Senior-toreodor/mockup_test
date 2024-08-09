@@ -5,9 +5,7 @@
     margin-right: 3rem;
 }
 .centralPanel {
-    display: flex;
-    margin-left: 20vh;
-    margin-right: 20vh;
+    display: flex; 
     justify-content: center;
 }
 .mainText {
@@ -59,7 +57,7 @@
 } 
 .auth-panel h2 {
     padding-bottom: 1vh;
-    text-align: left;
+    text-align: center;
     margin: 0px;
     border-bottom: 2px solid rgba(143, 199, 154, 0.4);
 }
@@ -68,6 +66,8 @@
     border-bottom: 2px solid rgba(143, 199, 154, 0.4);
 }
 .submitButton {
+    width: 10vh;
+    font-size: 2vh;
     font-family: Archivo Black;
 }
 .submitButton:hover {
@@ -92,6 +92,7 @@
 }
 .gradient-border {
     margin-left: auto;
+    overflow: hidden;
     display: flex;
     padding: 15px;
     border-radius: 5vh; /* Optional: For rounded corners */
@@ -99,7 +100,7 @@
     background: linear-gradient(228.42deg, #E6F0F1 -2.67%, #8FC79A 26.21%, #E6F0F1 92.02%);
     -webkit-background-clip: padding-box; /* For Safari */
     background-clip: padding-box; /* Makes sure background does not bleed into the border */
-    border: 5px solid transparent; /* Sets the width of the gradient border */ 
+    border: 5px solid transparent; /* Sets the width of the gradient border */
 }
 .headPanel{
     display:flex;

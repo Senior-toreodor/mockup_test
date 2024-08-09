@@ -1,9 +1,7 @@
 .siteHeader {
     display: flex;
     padding-top: 3rem;
-    justify-content: center;
-    margin-left: 20vh;
-    margin-right: 20vh;
+    justify-content: center; 
 }
 .logoDiv {
     display: flex;
