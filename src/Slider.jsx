@@ -1,6 +1,4 @@
-import './Slider.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import './Slider.css'; 
 import blackbird from './assets/WorkWithLogos/blackbird.png';
 import courtyard from './assets/WorkWithLogos/courtyard.png';
 import dydx from './assets/WorkWithLogos/dydx.svg';  
