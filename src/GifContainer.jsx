@@ -110,7 +110,7 @@ const GifContainer = () => {
                             ref={panelRef}
                         >
                             <div className="mailDiv">
-                                <div>
+                                <div className="authPanelContent">
                                     <div className="checkbox-group">
                                         Google
                                         <label>
@@ -182,10 +182,11 @@ const GifContainer = () => {
                                             <input
                                                 type="checkbox"
                                                 name="MetaMask"
-                                                checked={authMethods.metamask}
+                                                checked={authMethods.Metamask}
                                                 onChange={handleCheckboxChange}
                                             />
                                         </label>
+
                                     </div>
                                     <div className="checkbox-group">
                                         RainBow
@@ -193,7 +194,7 @@ const GifContainer = () => {
                                             <input
                                                 type="checkbox"
                                                 name="RainBow"
-                                                checked={authMethods.rainbow}
+                                                checked={authMethods.Rainbow}
                                                 onChange={handleCheckboxChange}
                                             />
                                         </label>
@@ -206,7 +207,7 @@ const GifContainer = () => {
                                             <input
                                                 type="checkbox"
                                                 name="CoinBase"
-                                                checked={authMethods.coinbase}
+                                                checked={authMethods.Coinbase}
                                                 onChange={handleCheckboxChange}
                                             />
                                         </label>
@@ -217,7 +218,7 @@ const GifContainer = () => {
                                             <input
                                                 type="checkbox"
                                                 name="Other"
-                                                checked={authMethods.other}
+                                                checked={authMethods.Other}
                                                 onChange={handleCheckboxChange}
                                             />
                                         </label>

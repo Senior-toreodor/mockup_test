@@ -9,8 +9,8 @@
     justify-content: center;
 }
 .mainText {
-    max-width:80vh;
-    font-size: 8vh;
+    max-width: 80vh;
+    font-size: 5rem;
 }
 .cursive-word{
     font-style:italic;
@@ -74,9 +74,10 @@
     color: #FDB137;
 }
 .checkbox-group {
+    display:flex;
     margin: 1vh;
     padding: 1vh;
-    width: 75%;
+    width: 7rem;
     border-radius: 2vh;
     border: 1px solid rgba(0, 0, 0, 0.1 );
     font-family: Urbanist;
@@ -101,10 +102,13 @@
     background-clip: padding-box; /* Makes sure background does not bleed into the border */
     border: 5px solid transparent; /* Sets the width of the gradient border */
 }
-.headPanel{
-    display:flex;
+.authPanelContent{
+    overflow:hidden;
+}
+.headPanel {
+    display: flex;
     margin: 1vh;
-    align-items:center;
+    align-items: center;
 }
 .headPanel p {
     margin:0vh;
@@ -164,6 +168,16 @@
     max-height: 0;
     opacity: 0;
     transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+@media (min-width: 3440px) {
+    .checkbox-group {
+        margin: 1vh;
+        padding: 1vh;
+        width: 4vh;
+        border-radius: 2vh;
+        border: 1px solid rgba(0, 0, 0, 0.1 );
+        font-family: Urbanist;
+    }
 }
 
 
