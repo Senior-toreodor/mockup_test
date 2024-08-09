@@ -74,10 +74,9 @@
     color: #FDB137;
 }
 .checkbox-group {
-    display: flex;
     margin: 1vh;
     padding: 1vh;
-    width: 15vh;
+    width: 75%;
     border-radius: 2vh;
     border: 1px solid rgba(0, 0, 0, 0.1 );
     font-family: Urbanist;
