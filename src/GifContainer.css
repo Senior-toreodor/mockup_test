@@ -1,7 +1,8 @@
 
 .advertismentPanel {
-    display: grid; 
-    margin-right:3rem;
+    display: grid;
+    max-height: 5vh;
+    margin-right: 3rem;
 }
 .centralPanel {
     display: flex;
@@ -98,13 +99,11 @@
     background: linear-gradient(228.42deg, #E6F0F1 -2.67%, #8FC79A 26.21%, #E6F0F1 92.02%);
     -webkit-background-clip: padding-box; /* For Safari */
     background-clip: padding-box; /* Makes sure background does not bleed into the border */
-    border: 5px solid transparent; /* Sets the width of the gradient border */
-    right: 35vh;
-    position: fixed;
+    border: 5px solid transparent; /* Sets the width of the gradient border */ 
 }
 .headPanel{
     display:flex;
-    margin-top:1vh;
+    margin: 1vh;
     align-items:center;
 }
 .headPanel p {
