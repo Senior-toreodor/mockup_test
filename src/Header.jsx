@@ -4,7 +4,7 @@ import arrow from './assets/Arrow.svg';
 const Header = () => {
     return (
         <header className="siteHeader"> 
-            <div className="mainBar">
+            <div className="mainBar mainHeaderBarPhone">
             <div className="navigationContent">
                 <ul>
                     <li className="logoDiv">  

@@ -1,7 +1,8 @@
 .ticker-container {
     overflow: hidden;
     white-space: nowrap;
-    width: 100%; 
+    width: 100%;
+    max-width: 100%; /* Ensures it doesn't exceed screen width */  
 }
 
 /* The ticker itself */
@@ -13,7 +14,8 @@
 /* Each item in the ticker */
 .ticker-item {
     display: inline-block;
-    margin-right: 3rem; 
+    margin-right: 2rem; /* Reduce margin for smaller screens */
+    vertical-align: middle; /* Align items vertically */
 }
 
 .ticker-item img {
@@ -31,4 +33,29 @@
     100% {
         transform: translateX(-50%);
     }
-} 
+}
+
+@media (max-width: 768px) {
+    .ticker-item {
+        margin-right: 1.5rem; /* Even smaller margin on mobile */
+    }
+
+        .ticker-item img {
+            height: 2rem;
+            max-width: 100%;
+            height: 1.5rem; /* Smaller image size on mobile */
+        }
+
+    .ticker {
+        animation-duration: 40s; /* Slower animation on mobile */
+    }
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .ticker-item img {
+            -webkit-transform: translateX(0); /* Safari-specific fix */
+            transform: translateX(0);
+        }
+    }
+}

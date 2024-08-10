@@ -1,7 +1,9 @@
 .siteHeader {
     display: flex;
     padding-top: 3rem;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center; /* Ensure proper vertical alignment */
+    flex-wrap: wrap; 
 }
 .logoDiv {
     display: flex;
@@ -112,4 +114,73 @@
 }
 .contactsPanel .imageButton:hover{
     fill:#FDB137;
+}
+
+@media (max-width: 768px) {
+    .hiddenAboutPanel { 
+        position: absolute; /* Remove from normal document flow */
+        border-radius: 1rem;
+        padding: 1vh;
+        width: 10rem;
+        background: white;
+        color: black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visibility */
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+    .mainHeaderBarPhone {
+        flex-direction:row !important;
+    }
+    .siteHeader {
+        position: fixed;
+        padding: 0;
+        background: rgba(230, 240, 241, 0.3);
+        flex-direction: column; /* Stack elements vertically on small screens */
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* Align content horizontally */
+        align-items: center;
+        width: 100%;
+    }
+
+    .logoDiv {
+        padding-right: 0;
+        margin-bottom: 1rem; /* Add some spacing */
+        justify-content: center; /* Center on small screens */
+    }
+    .logoDiv span {
+        display:none;
+    } 
+    .logo {
+        height: 2rem;
+    }
+    .navigationContent{
+        margin-top:1rem;
+    }
+    .navigationContent ul { 
+        gap: 0.5rem; 
+    }
+    .navigationContent ul li {
+        width: auto;
+    }
+    .navigationContent a span {
+        font-size: 1rem;
+    }
+    .hiddenAboutPanel {
+        width: 8rem;
+    }
+    .contactsPanel {
+        margin: 0; 
+        width: 100%;
+        justify-content: center; /* Center contacts on small screens */
+    }
+    .contactsPanel .contactsPanelContent {
+        justify-content: center;
+    }
+    .contactsPanel .imageButton {
+        padding-left: 0;
+    }
+    .contactsPanel button {
+        margin-right: 0.2rem;
+    }
 }

@@ -1,16 +1,17 @@
 
 .advertismentPanel {
-    display: grid;
-    max-height: 5vh;
+    display: grid; 
     margin-right: 3rem;
+    overflow: hidden;
 }
 .centralPanel {
-    display: flex; 
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .mainText {
     max-width: 80vh;
-    font-size: 5rem;
+    font-size: 5rem; 
 }
 .cursive-word{
     font-style:italic;
@@ -21,6 +22,7 @@
     font-size: 2.1vh;
 }
 .buttonPannel {
+    flex-wrap: wrap;
     display: flex;
     padding-top: 5rem;
 }
@@ -49,11 +51,13 @@
         transform: scale(1.3);
     }
 }
-.auth-panel { 
-    padding: 1rem; 
+.auth-panel {
+    padding: 1rem;
     border-radius: 4vh;
     min-width: 15rem;
-    background: #E6F0F1; 
+    background: #E6F0F1;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    margin: 0 auto; /* Center on smaller screens */
 } 
 .auth-panel h2 {
     padding-bottom: 1vh;
@@ -69,18 +73,21 @@
     width: 10vh;
     font-size: 2vh;
     font-family: Archivo Black;
+    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    text-align: center; /* Center text on buttons */
 }
 .submitButton:hover {
     color: #FDB137;
 }
 .checkbox-group {
-    display:flex;
+    display: flex;
     margin: 1vh;
     padding: 1vh;
     width: 7rem;
     border-radius: 2vh;
     border: 1px solid rgba(0, 0, 0, 0.1 );
     font-family: Urbanist;
+    justify-content: space-between;
 }
 .checkbox-group label {
     cursor: pointer;
@@ -89,7 +96,7 @@
 .mailDiv {
     justify-content: space-around;
     display: flex; 
-}
+} 
 .gradient-border {
     margin-left: auto;
     overflow: hidden;
@@ -109,6 +116,7 @@
     display: flex;
     margin: 1vh;
     align-items: center;
+    flex-wrap: wrap;
 }
 .headPanel p {
     margin:0vh;
@@ -151,7 +159,7 @@
 .panel {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out; 
+    transition: max-height 0.5s ease-out;
     border-radius: 0.5vh;
     padding: 0 1vh;
     opacity: 0;
@@ -190,6 +198,51 @@
         border-radius: 2vh;
         border: 1px solid rgba(0, 0, 0, .1);
         font-family: Urbanist;
+    }
+}
+@media (max-width: 768px) {
+    .centralPanel {
+        padding-top:3rem;
+    }
+    .mailDiv { 
+        flex-wrap: wrap;
+    }
+    .advertismentPanel {
+        margin-right: 0; /* Reduce margin on smaller screens */
+    }
+
+    .mainText {
+        font-size: 3rem; /* Reduce font-size on smaller screens */
+        margin: 0.5rem;
+    }
+
+    .quoteText {
+        font-size: 1.5vh; /* Adjust text size on smaller screens */
+        margin: 0.5rem;
+        text-align:center;
+    }
+
+    .buttonPannel {
+        padding: 2rem; /* Reduce top padding on smaller screens */
+    }
+
+    .submitButton {
+        width: 8vh; /* Adjust button width */
+    }
+
+    .checkbox-group {
+        width: 6rem; /* Adjust width of checkbox group */
+    }
+
+    .gradient-border {
+        padding: 10px; /* Adjust padding on smaller screens */
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .buttonPannel button{
+        margin-right:0;
+        display:block;
     }
 }
 
