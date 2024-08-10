@@ -82,6 +82,8 @@ button {
 
 @media not all and (-webkit-min-device-pixel-ratio: 0) {
     .arrow {
-        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg); /* Safari-specific prefix */
+        transform-origin: center; /* Optional: Set origin to center */
     }
 }
