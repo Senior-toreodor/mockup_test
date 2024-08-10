@@ -79,3 +79,9 @@ button {
         margin: 0.5rem;
     }
 }
+
+@media not all and (-webkit-min-device-pixel-ratio: 0) {
+    .arrow {
+        -webkit-transform: rotate(90deg);
+    }
+}
