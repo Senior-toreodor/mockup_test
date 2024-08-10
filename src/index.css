@@ -11,7 +11,7 @@ body{
     background-position: center !important;
     background-repeat: no-repeat !important;
     background: linear-gradient(49.84deg, #8FC79A -38.34%, #E6F0F1 77.05%);
-    -webkit-background-clip: text;
+    background: -webkit-linear-gradient(49.84deg, #8FC79A -38.34%, #E6F0F1 77.05%);
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }

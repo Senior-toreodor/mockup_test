@@ -1,8 +1,13 @@
 
 .advertismentPanel {
-    display: grid; 
+    display: grid;
     margin-right: 3rem;
     overflow: hidden;
+    height: fit-content;
+    display: grid;
+    margin-right: 3rem;
+    overflow: hidden; /* Ensures child overflow is hidden */ 
+    position: relative; /* Necessary for absolutely positioning children */
 }
 .centralPanel {
     display: flex;
@@ -73,7 +78,7 @@
     width: 10vh;
     font-size: 2vh;
     font-family: Archivo Black;
-    padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+    padding: 0.5rem; /* Adjust padding for smaller screens */
     text-align: center; /* Center text on buttons */
 }
 .submitButton:hover {
@@ -96,10 +101,11 @@
 .mailDiv {
     justify-content: space-around;
     display: flex; 
-} 
+}
 .gradient-border {
+    height: fit-content;
     margin-left: auto;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     padding: 15px;
     border-radius: 5vh; /* Optional: For rounded corners */
