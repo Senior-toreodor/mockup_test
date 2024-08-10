@@ -80,10 +80,12 @@ button {
     }
 }
 
-@media not all and (-webkit-min-device-pixel-ratio: 0) {
-    .arrow {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg); /* Safari-specific prefix */
-        transform-origin: center; /* Optional: Set origin to center */
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) {
+        .arrow {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg); /* Safari-specific prefix */
+            transform-origin: center; /* Optional: Set origin to center */
+        }
     }
 }
