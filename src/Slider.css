@@ -16,8 +16,7 @@
 .ticker-item {
     display: inline-block;
     margin-right: 2rem; /* Reduce margin for smaller screens */
-    vertical-align: middle; /* Align items vertically */ 
-    white-space: nowrap; 
+    vertical-align: middle; /* Align items vertically */  
 }
 
 .ticker-item img {
