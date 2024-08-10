@@ -29,12 +29,7 @@ function MultipleItems() {
                     <div className="ticker-item" key={index}>
                         <img src={image.src} alt={image.alt} />
                     </div>
-                ))}  
-                {images.concat(images).map((image, index) => (
-                    <div className="ticker-item" key={index}>
-                        <img src={image.src} alt={image.alt} />
-                    </div>
-                ))}  
+                ))} 
             </div>   
         </div>
     );

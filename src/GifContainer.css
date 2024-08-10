@@ -246,9 +246,11 @@
         margin-bottom: 2rem;
     }
 
-    .buttonPannel button{
-        margin-right:0;
-        display:block;
+    .buttonPannel button {
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        color: black;
     }
 }
 
