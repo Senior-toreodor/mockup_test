@@ -133,9 +133,9 @@
     .siteHeader {
         position: fixed;
         padding: 0;
-        background: rgba(230, 240, 241, 0.3);
+        background: rgba(230, 240, 241, 0.9);
         flex-direction: column; /* Stack elements vertically on small screens */
-
+        z-index:1;
         display: flex;
         flex-direction: row;
         justify-content: space-between; /* Align content horizontally */

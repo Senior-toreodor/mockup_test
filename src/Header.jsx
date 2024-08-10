@@ -53,12 +53,12 @@ const Header = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/">
+                        <a>
                             <span>Home</span>
                         </a> 
                     </li>
                     <li>
-                        <a href="/about">
+                        <a>
                         <span>About</span>
                             <img src={arrow} className="arrow" /> 
                         </a>  
@@ -83,7 +83,7 @@ const Header = () => {
                         </div>
                     </li>
                     <li>
-                        <a href="/services">
+                        <a>
                         <span>Services</span>
                             <img src={arrow} className="arrow" />
                         </a>
@@ -105,7 +105,7 @@ const Header = () => {
                         </div>
                     </li> 
                     <li>
-                        <a href="/">
+                        <a>
                             <span>Security</span>
                         </a> 
                     </li>

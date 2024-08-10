@@ -219,7 +219,7 @@
 
     .mainText {
         font-size: 3rem; /* Reduce font-size on smaller screens */
-        margin: 0.5rem;
+        margin: 1rem;
     }
 
     .quoteText {
@@ -229,7 +229,7 @@
     }
 
     .buttonPannel {
-        padding: 2rem; /* Reduce top padding on smaller screens */
+        padding: 1rem; /* Reduce top padding on smaller screens */
     }
 
     .submitButton {
